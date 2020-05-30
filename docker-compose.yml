@@ -1,0 +1,11 @@
+version: "3.0"
+
+services:
+  # FastAPI
+  api:
+    container_name: "api"
+    build: .
+    restart: always
+    tty: true
+    ports:
+      - 8000:8000
